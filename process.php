@@ -21,6 +21,7 @@ $data[':truss']=$_GET['truss'];
 $data[':pointsPrevented']=$_GET['pointsPrevented'];
 $data[':note']=$_GET['note'];
 $data[':ip']=$_SERVER['REMOTE_ADDR'];
+$data[':mac']='';
 
 $ipAddress=$_SERVER['REMOTE_ADDR'];
 $arp="arp -a $ipAddress";
@@ -32,10 +33,13 @@ foreach($lines as $line) {
   }
 }
 
-$stmt=$dbh->prepare("INSERT INTO matches (teamNumber,matchNumber,autohtMiss,autohtMade,hotGoal,autoltMiss,autoltMade,hotZone,startPosition,htMiss,htMade,ltMiss,ltMade,passes,catches,truss,pointsPrevented,note,ip,mac) VALUES (:teamNumber,:matchNumber,:autohtMiss,:autohtMade,:hotGoal,:autoltMiss,:autoltMade,:hotZone,:startPosition,:htMiss,:htMade,:ltMiss,:ltMade,:passes,:catches,:truss,:pointsPrevented,:note,:ip,:mac)");
+$stmt=$dbh->prepare("INSERT INTO rounds (teamNumber,matchNumber,autohtMiss,autohtMade,hotGoal,autoltMiss,autoltMade,hotZone,startPosition,htMiss,htMade,ltMiss,ltMade,passes,catches,truss,pointsPrevented,note,ip,mac) VALUES (:teamNumber,:matchNumber,:autohtMiss,:autohtMade,:hotGoal,:autoltMiss,:autoltMade,:hotZone,:startPosition,:htMiss,:htMade,:ltMiss,:ltMade,:passes,:catches,:truss,:pointsPrevented,:note,:ip,:mac)");
 
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 try {
-  $stmt.exec($data);
+  $stmt->execute($data);
+  $affectedRows=$stmt->rowCount();
+  echo($affectedRows);
   //$count = $dbh->exec($sqlstr);
 } catch(PDOException $e) {
   die($e->getMessage());
