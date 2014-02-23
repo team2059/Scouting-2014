@@ -1,22 +1,42 @@
 <?php
 include('connection.php');
-try {
-  $count = $dbh->exec("INSERT INTO (sup) VALUES ('sup', 'hi')");
-} catch(PDOException $e) {
-  die($e->getMessage());
-}
+
+$data=array();
+$data[':teamNumber']=$_GET['teamNumber'];
+$data[':matchNumber']=$_GET['matchNumber'];
+$data[':autohtMiss']=$_GET['autohtMiss'];
+$data[':autohtMade']=$_GET['autohtMade'];
+$data[':hotGoal']=$_GET['hotGoal'];
+$data[':autoltMiss']=$_GET['autoltMiss'];
+$data[':autoltMade']=$_GET['autoltMade'];
+$data[':hotZone']=$_GET['hotZone'];
+$data[':startPosition']=$_GET['startPosition'];
+$data[':htMiss']=$_GET['htMiss'];
+$data[':htMade']=$_GET['htMade'];
+$data[':ltMiss']=$_GET['ltMiss'];
+$data[':ltMade']=$_GET['ltMade'];
+$data[':passes']=$_GET['passes'];
+$data[':catches']=$_GET['catches'];
+$data[':truss']=$_GET['truss'];
+$data[':pointsPrevented']=$_GET['pointsPrevented'];
+$data[':note']=$_GET['note'];
+$data[':ip']=$_SERVER['REMOTE_ADDR'];
+
 $ipAddress=$_SERVER['REMOTE_ADDR'];
-$macAddr=false;
-
-
-#run the external command, break output into lines
 $arp="arp -a $ipAddress";
 $lines=explode("\n", $arp);
-#look for the output line describing our IP address
 foreach($lines as $line) {
   $cols=preg_split('/\s+/', trim($line));
   if ($cols[0]==$ipAddress) {
-    $macAddr=$cols[1];
+    $data[':mac']=$cols[1];
   }
 }
-var_dump($macAddr);
+
+$stmt=$dbh->prepare("INSERT INTO matches (teamNumber,matchNumber,autohtMiss,autohtMade,hotGoal,autoltMiss,autoltMade,hotZone,startPosition,htMiss,htMade,ltMiss,ltMade,passes,catches,truss,pointsPrevented,note,ip,mac) VALUES (:teamNumber,:matchNumber,:autohtMiss,:autohtMade,:hotGoal,:autoltMiss,:autoltMade,:hotZone,:startPosition,:htMiss,:htMade,:ltMiss,:ltMade,:passes,:catches,:truss,:pointsPrevented,:note,:ip,:mac)");
+
+try {
+  $stmt.exec($data);
+  //$count = $dbh->exec($sqlstr);
+} catch(PDOException $e) {
+  die($e->getMessage());
+}
