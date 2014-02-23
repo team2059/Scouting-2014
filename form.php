@@ -1,11 +1,13 @@
 <?php  session_start(); 
-include('connection.php');
-$db_query= mysql_query("SELECT * FROM test");
+     include('connection.php');
+     $db_query= mysql_query("SELECT * FROM test");
 ?>
 <!DOCTYPE>
 <head>
 <title>Scouting - Regional Form</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="jmobile/jquery.mobile-1.4.1.min.css" />
+<script src="jmobile/jquery.mobile-1.4.1.min.js"></script>
+<script src="jmobile/jquery.mobile-1.4.1.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 
@@ -50,20 +52,20 @@ $db_query= mysql_query("SELECT * FROM test");
 </table>
 <label for="hotZone">Hot Zone:</label>
 <select name="hotZone" id="hotZone" data-role="slider">
-  <option value="no">No</option>
+	<option value="no">No</option>
         <option value="yes">Yes</option>
 </select> 
 
 <fieldset data-role="controlgroup">
-  <legend>Start Position:</legend>
-      <input type="radio" name="startPosition" id="left" value="left" />
-      <label for="great">Left</label>
-      <input type="radio" name="startPosition" id="middle" value="middle"  />
-      <label for="average">Middle</label>
-      <input type="radio" name="startPosition" id="right" value="right"  />
-      <label for="no">Right</label>
+	<legend>Start Position:</legend>
+     	<input type="radio" name="startPosition" id="left" value="left" />
+     	<label for="great">Left</label>
+     	<input type="radio" name="startPosition" id="middle" value="middle"  />
+     	<label for="average">Middle</label>
+     	<input type="radio" name="startPosition" id="right" value="right"  />
+     	<label for="no">Right</label>
         <input type="radio" name="startPosition" id="goalie" value="goalie"  />
-      <label for="no">Goalie</label>
+     	<label for="no">Goalie</label>
 </fieldset>
 
 
@@ -102,7 +104,7 @@ $db_query= mysql_query("SELECT * FROM test");
 <p>Comments: <input type="text" name="notes" /></p>
 <input type="submit" value="Submit" />
 </form>
-  </div>
+	</div>
 
 
 </body>
