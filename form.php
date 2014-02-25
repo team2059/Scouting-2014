@@ -1,52 +1,13 @@
 <?php
-session_start(); 
-require('connection.php');
-//             WHAT DO YOU THINK YOU'RE DOING CHRISTIAN!!!!!!!!!!!
-//             HAVE YOU PROGRAMMED BEFORE!?!?!??!?!?!!!
-//             ALWAYS ADD LIMIT 1 FOR A TEST!!!
-//             EJFKEJKFJSKLJWELAFJAE;LAJKE;LGJA;LGJAEL;KJEA
-//             WTF!! mysql_query!?!?!?!?!?!?!?!?!?!!?!?!?!?!?!?!?!?!?
-//             NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-//
-//             Crucifix of bad code:
-//                              _________
-//                              |       |
-//          ____________________|       |___________________
-//          |                                              |
-//          | $db_query= mysql_query("SELECT * FROM test");|
-//          |                                              |
-//          |___________________        ___________________|
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |       |
-//                              |_______|
-//Here's the right way: 
-//$test=$dbh->preare("SELECT * FROM rounds LIMIT 1");
-//try{
-//  $test->execute();
-//}catch(PDOException $e){
-//  //TODO remove this in prod
-//  die($e->getMessage());
-//  //die("Could not select database");
-//}
-//
-//But, it automatically does it in connection.php
+//session_start(); 
+//require('connection.php');
 ?>
 <!DOCTYPE>
 <head>
 <title>Scouting - Regional Form</title>
-<link rel="stylesheet" type="text/css" href="jmobile/jquery.mobile-1.4.1.min.css" />
-<script src="jmobile/jquery.mobile-1.4.1.min.js"></script>
-<script src="jmobile/jquery.mobile-1.4.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquerymobile.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquerymobile.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
