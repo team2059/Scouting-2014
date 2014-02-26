@@ -1,6 +1,6 @@
 <?php
-//session_start(); 
-//require('connection.php');
+session_start(); 
+require('connection.php');
 ?>
 <!DOCTYPE>
 <head>
@@ -8,6 +8,19 @@
 <link rel="stylesheet" type="text/css" href="css/jquerymobile.css" />
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
+<script>
+function increaseht() {
+    document.getElementById("autohtMiss").value = Number(document.getElementById("autohtMiss").value) + 1;
+}
+function decreaseht() {
+	document.getElementById("autohtMiss").value = Number(document.getElementById("autohtMiss").value) - 1;
+}
+$("input[:type=button]").onClick({
+	alert('a');
+	
+	$(this).parent().find("input[:type=text]").first().html(1+parseInt($(this).parent().first().html()));
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
@@ -46,17 +59,29 @@
   <option value="no">No</option>
   <option value="yes">Yes</option>
 </select> 
-<fieldset data-role="controlgroup">
-  <legend>Start Position:</legend>
-  <input type="radio" name="startPosition" id="left" value="left" />
-  <label for="great">Left</label>
-  <input type="radio" name="startPosition" id="middle" value="middle"  />
-  <label for="average">Middle</label>
-  <input type="radio" name="startPosition" id="right" value="right"  />
-  <label for="no">Right</label>
-  <input type="radio" name="startPosition" id="goalie" value="goalie"  />
-  <label for="no">Goalie</label>
-</fieldset>
+<div id="startPosition" data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Start Position:
+                </legend>
+                <input id="radio1" name="startPosition" value="left" type="radio">
+                <label for="radio1">
+                    Left
+                </label>
+                <input id="radio2" name="startPosition" value="middle" type="radio">
+                <label for="radio2">
+                    Middle
+                </label>
+                <input id="radio3" name="startPosition" value="right" type="radio">
+                <label for="radio3">
+                    Right
+                </label>
+                <input id="radio4" name="startPosition" value="goalie" type="radio">
+                <label for="radio4">
+                    Goalie
+                </label>
+            </fieldset>
+</div>
 <h1>Teleop</h1>
 <p>Driver control period</p>
 <table>
