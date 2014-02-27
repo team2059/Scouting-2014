@@ -24,7 +24,13 @@ require('connection.php');
      <td><b>Notes</b></td>
      
      </tr>";
-     while($record = mysql_fetch_array($db_query)){
+	 $resultsTable;
+	 $sql=file_get_contents('rounds.sql');
+	 if(!$data=$dbh->query($sql)){
+     	die('There was an error');
+	 }
+    // while($record = mysql_fetch_array($db_query)){
+	while($row=$data->fetch_assoc()){
           echo "<tr>";
           echo"<td>" . $record['teamNumber'] . "</td>";
           echo"<td>" . $record['matchNumber'] . "</td>";
@@ -47,4 +53,3 @@ require('connection.php');
           echo"</tr>";
      }
      echo"</table></center>";
-?>
