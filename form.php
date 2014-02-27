@@ -8,35 +8,7 @@ require('connection.php');
 <link rel="stylesheet" type="text/css" href="css/jquerymobile.css" />
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
-<script>
-function autohtMissp() {document.getElementById("autohtMiss").value = Number(document.getElementById("autohtMiss").value) + 1;}
-function autohtMissm() {document.getElementById("autohtMiss").value = Number(document.getElementById("autohtMiss").value) - 1;}
-function autohtMadep() {document.getElementById("autohtMade").value = Number(document.getElementById("autohtMade").value) + 1;}
-function autohtMadem() {document.getElementById("autohtMade").value = Number(document.getElementById("autohtMade").value) - 1;}
-function hotGoalp() {document.getElementById("hotGoal").value = Number(document.getElementById("hotGoal").value) + 1;}
-function hotGoalm() {document.getElementById("hotGoal").value = Number(document.getElementById("hotGoal").value) - 1;}
-function autoltMissp() {document.getElementById("autoltMiss").value = Number(document.getElementById("autoltMiss").value) + 1;}
-function autoltMissm() {document.getElementById("autoltMiss").value = Number(document.getElementById("autoltMiss").value) - 1;}
-function autoltMadep() {document.getElementById("autoltMade").value = Number(document.getElementById("autoltMade").value) + 1;}
-function autoltMadem() {document.getElementById("autoltMade").value = Number(document.getElementById("autoltMade").value) - 1;}
-
-function htMissp() {document.getElementById("htMiss").value = Number(document.getElementById("htMiss").value) + 1;}
-function htMissm() {document.getElementById("htMiss").value = Number(document.getElementById("htMiss").value) - 1;}
-function htMadep() {document.getElementById("htMade").value = Number(document.getElementById("htMade").value) + 1;}
-function htMadem() {document.getElementById("htMade").value = Number(document.getElementById("htMade").value) - 1;}
-function ltMissp() {document.getElementById("ltMiss").value = Number(document.getElementById("ltMiss").value) + 1;}
-function ltMissm() {document.getElementById("ltMiss").value = Number(document.getElementById("ltMiss").value) - 1;}
-function ltMadep() {document.getElementById("ltMade").value = Number(document.getElementById("ltMade").value) + 1;}
-function ltMadem() {document.getElementById("ltMade").value = Number(document.getElementById("ltMade").value) - 1;}
-function passesp() {document.getElementById("passes").value = Number(document.getElementById("passes").value) + 1;}
-function passesm() {document.getElementById("passes").value = Number(document.getElementById("passes").value) - 1;}
-function catchesp() {document.getElementById("catches").value = Number(document.getElementById("catches").value) + 1;}
-function catchesm() {document.getElementById("catches").value = Number(document.getElementById("catches").value) - 1;}
-function trussp() {document.getElementById("truss").value = Number(document.getElementById("truss").value) + 1;}
-function trussm() {document.getElementById("truss").value = Number(document.getElementById("truss").value) - 1;}
-function pointsPreventedp() {document.getElementById("pointsPrevented").value = Number(document.getElementById("pointsPrevented").value) + 1;}
-function pointsPreventedm() {document.getElementById("pointsPrevented").value = Number(document.getElementById("pointsPrevented").value) - 1;}
-</script>
+<script src="js/buttons.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
@@ -128,7 +100,7 @@ function pointsPreventedm() {document.getElementById("pointsPrevented").value = 
 <td><input type="button" name="increase" value="+" onclick="pointsPreventedp()"/></td></tr>
 </tr>
 </table>
-<p>Comments: <input type="text" name="notes" /></p>
+<p>Comments: <input type="text" name="note" /></p>
 <input type="submit" value="Submit" />
 </form>
   </div>
