@@ -1,55 +1,67 @@
 <?php
 session_start(); 
 require('connection.php');
+?>
+	<html>
+    <head>
+	<script type="text/javascript" src="js/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
 
-     echo "<center><h1>Sample Results</h1><table border='1' class='sortable'>
-     <tr>
-     <td><b>Team Number</b></td>
-     <td><b>Match Number</b></td>
-     <td><b>High Target Missed</b></td>
-     <td><b>High Target Made</b></td>
-     <td><b>Hot Goal</b></td>
-     <td><b>Low Target Missed</b></td>
-     <td><b>Low Target Made</b></td>
-     <td><b>Hot Zone</b></td>
-     <td><b>Start Posistion</b></td>
-     <td><b>High Target Missed</b></td>
-     <td><b>High Target Made</b></td>
-     <td><b>Low Target Missed</b></td>
-     <td><b>Low Target Made</b></td>
-     <td><b>Passes</b></td>
-     <td><b>Catches</b></td>
-     <td><b>Truss</b></td>
-     <td><b>Estimate Points Prevented</b></td>
-     <td><b>Notes</b></td>
+
+	<script type="text/javascript">
+	$(function() {		
+		$("#tablesorter-demo").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+	});	
+	</script>
+    </head>
+    <body>
+<?php
+
+     echo "<center><h1>Scouting SC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
+     <thead><tr>
+     <th><b>Team Number</b></th>
+     <th><b>Match Number</b></th>
+     <th><b>High Target Missed</b></th>
+     <th><b>High Target Made</b></th>
+     <th><b>Hot Goal</b></th>
+     <th><b>Low Target Missed</b></th>
+     <th><b>Low Target Made</b></th>
+     <th><b>Hot Zone</b></th>
+     <th><b>Start Posistion</b></th>
+     <th><b>High Target Missed</b></th>
+     <th><b>High Target Made</b></th>
+     <th><b>Low Target Missed</b></th>
+     <th><b>Low Target Made</b></th>
+     <th><b>Passes</b></th>
+     <th><b>Catches</b></th>
+     <th><b>Truss</b></th>
+     <th><b>Estimate Points Prevented</b></th>
+     <th><b>Notes</b></th>
      
-     </tr>";
-	 $resultsTable;
-	 $sql=file_get_contents('rounds.sql');
-	 if(!$data=$dbh->query($sql)){
-     	die('There was an error');
-	 }
-    // while($record = mysql_fetch_array($db_query)){
-	while($row=$data->fetch_assoc()){
-          echo "<tr>";
-          echo"<td>" . $record['teamNumber'] . "</td>";
-          echo"<td>" . $record['matchNumber'] . "</td>";
-          echo"<td>" . $record['autohtMiss'] . "</td>";
-          echo"<td>" . $record['autohtMade'] . "</td>";
-          echo"<td>" . $record['hotGoal'] . "</td>";
-          echo"<td>" . $record['autoltMiss'] . "</td>";
-          echo"<td>" . $record['autoltMade'] . "</td>";
-          echo"<td>" . $record['hotZone'] . "</td>";
-          echo"<td>" . $record['startPosition'] . "</td>";
-          echo"<td>" . $record['htMiss'] . "</td>";
-          echo"<td>" . $record['htMade'] . "</td>";
-          echo"<td>" . $record['ltMiss'] . "</td>";
-          echo"<td>" . $record['ltMade'] . "</td>";
-          echo"<td>" . $record['passes'] . "</td>";
-          echo"<td>" . $record['catches'] . "</td>";
-          echo"<td>" . $record['truss'] . "</td>";
-          echo"<td>" . $record['pointsPrevented'] . "</td>";
-          echo"<td>" . $record['note'] . "</td>";
-          echo"</tr>";
-     }
-     echo"</table></center>";
+     </tr></thead><tbody>";
+
+	 $asdf=$dbh->query("SELECT * FROM rounds LIMIT 10000");
+	 while($row = $asdf->fetch(PDO::FETCH_ASSOC)){
+		  echo "<tr>";
+          echo"<td>" . $row['teamNumber'] . "</td>";
+          echo"<td>" . $row['matchNumber'] . "</td>";
+          echo"<td>" . $row['autohtMiss'] . "</td>";
+          echo"<td>" . $row['autohtMade'] . "</td>";
+          echo"<td>" . $row['hotGoal'] . "</td>";
+          echo"<td>" . $row['autoltMiss'] . "</td>";
+          echo"<td>" . $row['autoltMade'] . "</td>";
+          echo"<td>" . $row['hotZone'] . "</td>";
+          echo"<td>" . $row['startPosition'] . "</td>";
+          echo"<td>" . $row['htMiss'] . "</td>";
+          echo"<td>" . $row['htMade'] . "</td>";
+          echo"<td>" . $row['ltMiss'] . "</td>";
+          echo"<td>" . $row['ltMade'] . "</td>";
+          echo"<td>" . $row['passes'] . "</td>";
+          echo"<td>" . $row['catches'] . "</td>";
+          echo"<td>" . $row['truss'] . "</td>";
+          echo"<td>" . $row['pointsPrevented'] . "</td>";
+          echo"<td>" . $row['note'] . "</td>";
+     echo"</tr>";
+   }
+
+     echo"</tbody></table></center></body></html>";
