@@ -35,7 +35,8 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 try {
   $stmt->execute($data);
   $affectedRows=$stmt->rowCount();
-  echo($affectedRows);
+  header("Location: form.php");
+  //echo($affectedRows);
   //$count = $dbh->exec($sqlstr);
 } catch(PDOException $e) {
   die($e->getMessage());
