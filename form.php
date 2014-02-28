@@ -9,6 +9,7 @@ require('connection.php');
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
 <script src="js/buttons.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
