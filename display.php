@@ -37,12 +37,39 @@ require('connection.php');
      <th><b>Truss</b></th>
      <th><b>Estimate Points Prevented</b></th>
      <th><b>Notes</b></th>
+	 <th><b>Tele Score</b></th>
+	 <th><b>Auto Score</b></th>
+	 <th><b>Total Score</b></th>
+	 <th><b>Auto Accuracy</b></th>
+	 <th><b>Tele Accuracy</b></th>
      
      </tr></thead><tbody>";
+	 
+	 $lastNumber=0;
+	 $change=false;
+	 $color=false;
 
-	 $asdf=$dbh->query("SELECT * FROM rounds LIMIT 10000");
+	 $asdf=$dbh->query("SELECT * FROM `rounds` WHERE 1 ORDER BY `teamNumber`");
 	 while($row = $asdf->fetch(PDO::FETCH_ASSOC)){
-		  echo "<tr>";
+		 
+		  if($row['teamNumber']==$lastNumber){}
+		  else{
+			  if($color==false){
+				  $color=true;
+			  }
+			  else {
+				  $color=false;
+			  }
+		  }
+		  if($color==false){
+				  echo "<tr bgcolor='#ff0000'>";
+			  }
+			  else {
+				  echo "<tr bgcolor='#ffffff'>";
+			  }
+		  
+		  $lastNumber=$row['teamNumber'];
+
           echo"<td>" . $row['teamNumber'] . "</td>";
           echo"<td>" . $row['matchNumber'] . "</td>";
           echo"<td>" . $row['autohtMiss'] . "</td>";
@@ -61,6 +88,19 @@ require('connection.php');
           echo"<td>" . $row['truss'] . "</td>";
           echo"<td>" . $row['pointsPrevented'] . "</td>";
           echo"<td>" . $row['note'] . "</td>";
+		  $tScore=($row['htMade']*10)+($row['ltMade']*1)+($row['passes']*10)+($row['truss']*10);
+		  echo"<td>" . $tScore . "</td>";
+		  $aScore=($row['autohtMade']*15)+($row['autoltMade']*6)+($row['hotGoal']*5);
+		  if($row['hotZone']=='yes')$aScore=$aScore+5;
+		  echo"<td>" . $aScore . "</td>";
+		  $totalScore=$tScore+$aScore;
+		  echo"<td>" . $totalScore . "</td>";
+		  if(($row['autohtMiss']+$row['autohtMade'])>0)$aAccuracy=(($row['autohtMade'])/($row['autohtMiss']+$row['autohtMade']))*100;
+		  else $aAccuracy='-';
+		  echo"<td>" . $aAccuracy . "</td>";
+		  if(($row['htMiss']+$row['htMade'])>0)$tAccuracy=(($row['htMade'])/($row['htMiss']+$row['htMade']))*100;
+		  else $tAccuracy='-';
+		  echo"<td>" . $tAccuracy . "</td>";
      echo"</tr>";
    }
 
