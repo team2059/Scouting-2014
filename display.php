@@ -17,7 +17,7 @@ require('connection.php');
     <body>
 <?php
 
-     echo "<center><h1>Scouting SC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
+     echo "<center><h1>Scouting NC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
      <thead><tr>
      <th><b>Team Number</b></th>
      <th><b>Match Number</b></th>
@@ -62,7 +62,7 @@ require('connection.php');
 			  }
 		  }
 		  if($color==false){
-				  echo "<tr bgcolor='#ff0000'>";
+				  echo "<tr bgcolor='#d3d3d3'>";
 			  }
 			  else {
 				  echo "<tr bgcolor='#ffffff'>";
@@ -88,7 +88,7 @@ require('connection.php');
           echo"<td>" . $row['truss'] . "</td>";
           echo"<td>" . $row['pointsPrevented'] . "</td>";
           echo"<td>" . $row['note'] . "</td>";
-		  $tScore=($row['htMade']*10)+($row['ltMade']*1)+($row['passes']*10)+($row['truss']*10);
+		  $tScore=($row['htMade']*10)+($row['ltMade']*1)+($row['passes']*10)+($row['truss']*10)+($row['catches']*10);
 		  echo"<td>" . $tScore . "</td>";
 		  $aScore=($row['autohtMade']*15)+($row['autoltMade']*6)+($row['hotGoal']*5);
 		  if($row['hotZone']=='yes')$aScore=$aScore+5;
