@@ -17,10 +17,13 @@ require('connection.php');
     return true;
 	});
 	function empty() {
-    if (document.getElementById("teamNumber").value == ""||document.getElementById("matchNumber").value == "") {
+	if (document.getElementById("teamNumber").value == ""||document.getElementById("matchNumber").value == "") {
         alert("Enter a Team Number and Match Number");
         return false;
-    };
+    }
+	else {
+		scouting.Submit.disabled=true
+	};
 }
 </script>
 
@@ -32,7 +35,7 @@ require('connection.php');
 <h1>Regional Menu</h1>
 </div>
 <div id="content">
-<form action="process.php" method="post" id="scouting" />
+<form action="process.php" method="post" name="scouting" />
 <h1>Match Info</h1>
 <p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
 <p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
