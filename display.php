@@ -21,11 +21,11 @@ require('connection.php');
      <thead><tr>
      <th><b>Team Number</b></th>
      <th><b>Match Number</b></th>
-     <th><b>High Target Missed</b></th>
-     <th><b>High Target Made</b></th>
+     <th><b>Auto High Target Missed</b></th>
+     <th><b>Auto High Target Made</b></th>
      <th><b>Hot Goal</b></th>
-     <th><b>Low Target Missed</b></th>
-     <th><b>Low Target Made</b></th>
+     <th><b>Auto Low Target Missed</b></th>
+     <th><b>Auto Low Target Made</b></th>
      <th><b>Hot Zone</b></th>
      <th><b>Start Posistion</b></th>
      <th><b>High Target Missed</b></th>

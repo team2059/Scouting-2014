@@ -17,15 +17,15 @@ require('connection.php');
     <body>
 <?php
 
-     echo "<center><h1>Scouting Summary NC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
+     echo "<center><h1>Scouting Average NC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
      <thead><tr>
      <th><b>Team Number</b></th>
      <th><b>Data Number</b></th>
-     <th><b>High Target Missed</b></th>
-     <th><b>High Target Made</b></th>
+     <th><b>Auto High Target Missed</b></th>
+     <th><b>Auto High Target Made</b></th>
      <th><b>Hot Goal</b></th>
-     <th><b>Low Target Missed</b></th>
-     <th><b>Low Target Made</b></th>
+     <th><b>Auto Low Target Missed</b></th>
+     <th><b>Auto Low Target Made</b></th>
      <th><b>Hot Zone</b></th>
      <th><b>High Target Missed</b></th>
      <th><b>High Target Made</b></th>

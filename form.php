@@ -9,6 +9,20 @@ require('connection.php');
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
 <script src="js/buttons.js"></script>
+<script>
+	$("form").submit(function() {
+    $(this).submit(function() {
+        return false;
+    });
+    return true;
+	});
+	function empty() {
+    if (document.getElementById("teamNumber").value == ""||document.getElementById("matchNumber").value == "") {
+        alert("Enter a Team Number and Match Number");
+        return false;
+    };
+}
+</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
@@ -18,10 +32,10 @@ require('connection.php');
 <h1>Regional Menu</h1>
 </div>
 <div id="content">
-<form action="process.php" method="post" />
+<form action="process.php" method="post" id="scouting" />
 <h1>Match Info</h1>
-<p>Team Number: <input type="number" name="teamNumber" /></p>
-<p>Match Number: <input type="number" name="matchNumber" /></p>
+<p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
+<p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
 <h1>Auto</h1>
 <p>First 10 seconds of the match</p>
 <table>
@@ -102,7 +116,7 @@ require('connection.php');
 </tr>
 </table>
 <p>Comments: <input type="text" name="note" /></p>
-<input type="submit" value="Submit" />
+<input type="submit" value="Submit" onClick="return empty()" />
 </form>
   </div>
 </body>
