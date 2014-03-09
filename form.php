@@ -10,21 +10,22 @@ require('connection.php');
 <script src="js/jquerymobile.js"></script>
 <script src="js/buttons.js"></script>
 <script>
-  $(document).ready(function(){
-	$("#submit").click(function() {
-	});
-  });
-	function empty() {
-	if (document.getElementById("teamNumber").value == ""||document.getElementById("matchNumber").value == "") {
-        alert("Enter a Team Number and Match Number");
-		$("html, body").animate({ scrollTop: 0 }, "fast");
-        return false;
+$(document).ready(function(){
+  $("#submit").click(function() {
+    if (("#teamNumber,#matchNumber").value=="") {
+      alert("Enter a Team Number and Match Number");
+      $("html, body").animate({ scrollTop: 0 }, "fast");
+      return false;
+    } else {
+      scouting.Submit.disabled=true;
+      $("#submit").unbind();
+      $('#scouting').submit(function(){
+        //This is called if the submit succeeds, so don't touch this unless it 
+        //breaks. I can't test it, so make sure this works
+      });
     }
-	else {	  
-		scouting.Submit.disabled=true;
-		$('#submit').attr('disabled','disabled');
-	};
-}
+  });
+});
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +36,7 @@ require('connection.php');
 <h1>Regional Menu</h1>
 </div>
 <div id="content">
-<form action="process.php" method="post" name="scouting" />
+<form action="process.php" method="post" name="scouting" id="scouting" />
 <h1>Match Info</h1>
 <p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
 <p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
@@ -119,7 +120,7 @@ require('connection.php');
 </tr>
 </table>
 <p>Comments: <input type="text" name="note" /></p>
-<input id="submit" type="submit" value="Submit" onClick="return empty()" />
+<input id="submit" type="button" value="Submit" onClick="return empty()" />
 </form>
   </div>
 </body>
