@@ -10,19 +10,19 @@ require('connection.php');
 <script src="js/jquerymobile.js"></script>
 <script src="js/buttons.js"></script>
 <script>
-	$("form").submit(function() {
-    $(this).submit(function() {
-        return false;
-    });
-    return true;
+  $(document).ready(function(){
+	$("#submit").click(function() {
 	});
+  });
 	function empty() {
 	if (document.getElementById("teamNumber").value == ""||document.getElementById("matchNumber").value == "") {
         alert("Enter a Team Number and Match Number");
+		$("html, body").animate({ scrollTop: 0 }, "fast");
         return false;
     }
-	else {
-		scouting.Submit.disabled=true
+	else {	  
+		scouting.Submit.disabled=true;
+		$('#submit').attr('disabled','disabled');
 	};
 }
 </script>
@@ -119,7 +119,7 @@ require('connection.php');
 </tr>
 </table>
 <p>Comments: <input type="text" name="note" /></p>
-<input type="submit" value="Submit" onClick="return empty()" />
+<input id="submit" type="submit" value="Submit" onClick="return empty()" />
 </form>
   </div>
 </body>
