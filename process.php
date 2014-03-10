@@ -40,5 +40,4 @@ try {
 } catch(PDOException $e) {
   die($e->getMessage());
 }
-header("Location: success.php");
-
+header("Location: form.php?alpine=apple");

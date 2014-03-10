@@ -1,33 +1,20 @@
 <?php
+header("Cache-Control: no-cache");
 session_start(); 
 require('connection.php');
+if($_REQUEST['alpine']=='apple'){
+  echo('<script>window.location.href="form.php";</script>');
+}
 ?>
 <!DOCTYPE>
 <head>
 <title>Scouting - Regional Form</title>
 <link rel="stylesheet" type="text/css" href="css/jquerymobile.css" />
+
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
-<script src="js/buttons.js"></script>
-<script>
-$(document).ready(function(){
-  $("#submit").click(function() {
-    if (("#teamNumber,#matchNumber").value=="") {
-      alert("Enter a Team Number and Match Number");
-      $("html, body").animate({ scrollTop: 0 }, "fast");
-      return false;
-    } else {
-      scouting.Submit.disabled=true;
-      $("#submit").unbind();
-      $('#scouting').submit(function(){
-        //This is called if the submit succeeds, so don't touch this unless it 
-        //breaks. I can't test it, so make sure this works
-      });
-    }
-  });
-});
-</script>
 
+<script src="js/local.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
@@ -45,20 +32,20 @@ $(document).ready(function(){
 <table>
 <tr>
 <td><label for="autohtMiss">High Target Missed: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="autohtMissm()"/></td><td><input type="text" name="autohtMiss" value="0" id="autohtMiss"/></td>
-<td><input type="button" name="increase" value="+" onclick="autohtMissp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autohtMiss" value="0" id="autohtMiss"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="autohtMade">High Target Made: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="autohtMadem()"/></td><td><input type="text" name="autohtMade" value="0" id="autohtMade"/></td>
-<td><input type="button" name="increase" value="+" onclick="autohtMadep()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autohtMade" value="0" id="autohtMade"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="hotGoal">Hot Goal: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="hotGoalm()"/></td><td><input type="text" name="hotGoal" value="0" id="hotGoal"/></td>
-<td><input type="button" name="increase" value="+" onclick="hotGoalp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="hotGoal" value="0" id="hotGoal"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="autoltMiss">Low Target Missed: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="autoltMissm()"/></td><td><input type="text" name="autoltMiss" value="0" id="autoltMiss"/></td>
-<td><input type="button" name="increase" value="+" onclick="autoltMissp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autoltMiss" value="0" id="autoltMiss"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="autoltMade">Low Target Made: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="autoltMadem()"/></td><td><input type="text" name="autoltMade" value="0" id="autoltMade"/></td>
-<td><input type="button" name="increase" value="+" onclick="autoltMadep()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autoltMade" value="0" id="autoltMade"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 </tr>
 </table>
 <label for="hotZone">Hot Zone:</label>
@@ -94,33 +81,33 @@ $(document).ready(function(){
 <table>
 <tr>
 <td><label for="htMiss">High Target Missed: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="htMissm()"/></td><td><input type="text" name="htMiss" value="0" id="htMiss"/></td>
-<td><input type="button" name="increase" value="+" onclick="htMissp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="htMiss" value="0" id="htMiss"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="htMade">High Target Made: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="htMadem()"/></td><td><input type="text" name="htMade" value="0" id="htMade"/></td>
-<td><input type="button" name="increase" value="+" onclick="htMadep()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="htMade" value="0" id="htMade"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="ltMiss">Low Target Missed: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="ltMissm()"/></td><td><input type="text" name="ltMiss" value="0" id="ltMiss"/></td>
-<td><input type="button" name="increase" value="+" onclick="ltMissp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="ltMiss" value="0" id="ltMiss"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="ltMade">Low Target Made: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="ltMadem()"/></td><td><input type="text" name="ltMade" value="0" id="ltMade"/></td>
-<td><input type="button" name="increase" value="+" onclick="ltMadep()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="ltMade" value="0" id="ltMade"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="passes">Passes: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="passesm()"/></td><td><input type="text" name="passes" value="0" id="passes"/></td>
-<td><input type="button" name="increase" value="+" onclick="passesp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="passes" value="0" id="passes"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="catches">Catches: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="catchesm()"/></td><td><input type="text" name="catches" value="0" id="catches"/></td>
-<td><input type="button" name="increase" value="+" onclick="catchesp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="catches" value="0" id="catches"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="truss">Shots over truss: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="trussm()"/></td><td><input type="text" name="truss" value="0" id="truss"/></td>
-<td><input type="button" name="increase" value="+" onclick="trussp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="truss" value="0" id="truss"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 <tr><td><label for="pointsPrevented">Estimate Points Prevented: </label></td>
-<td><input type="button" name="decrease" value="-" onclick="pointsPreventedm()"/></td><td><input type="text" name="pointsPrevented" value="0" id="pointsPrevented"/></td>
-<td><input type="button" name="increase" value="+" onclick="pointsPreventedp()"/></td></tr>
+<td><input type="button" class="decrease" value="-" "pointsPreventedm()"/></td><td><input type="text" name="pointsPrevented" value="0" id="pointsPrevented"/></td>
+<td><input type="button" class="increase" value="+" /></td></tr>
 </tr>
 </table>
 <p>Comments: <input type="text" name="note" /></p>
-<input id="submit" type="button" value="Submit" onClick="return empty()" />
+<input id="submit" onClick="a();" type="button" value="Submit" />
 </form>
   </div>
 </body>

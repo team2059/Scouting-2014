@@ -6,6 +6,6 @@
 </head>
 
 <body>
-<h1>Success!</h1><a href="form.php">New Form</a>
+<h1>Success!<a href="form.php">New Form</a></h1>
 </body>
 </html>
