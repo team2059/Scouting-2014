@@ -103,7 +103,7 @@ require('connection.php');
 </tr>
 </table>
 <p>Comments: <input type="text" name="note" /></p>
-<input id="submit" onClick="a();" type="submit" value="Submit" />
+<input id="submit" type="submit" value="Submit" />
 <!--
   <input id="submit" onClick="a();" type="button" value="Submit" />
 -->

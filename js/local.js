@@ -30,15 +30,3 @@ $(document).ready(function(){
     }
   });
 });
-// this is the id of the form
-function a(){
-  if(!$("#teamNumber").val()||!$("#matchNumber").val()){
-    alert("Enter a Team Number and Match Number");
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-  } else {
-    //scouting.Submit.disabled=true;
-    $("#submit").unbind();
-    $('#scouting').submit();
-  }
-}
