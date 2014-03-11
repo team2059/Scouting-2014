@@ -1,10 +1,6 @@
 <?php
-header("Cache-Control: no-cache");
 session_start(); 
 require('connection.php');
-if($_REQUEST['alpine']=='apple'){
-  echo('<script>window.location.href="form.php";</script>');
-}
 ?>
 <!DOCTYPE>
 <head>
