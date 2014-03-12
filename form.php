@@ -9,20 +9,19 @@ require('connection.php');
 
 <script src="js/jquery.js"></script>
 <script src="js/jquerymobile.js"></script>
-
 <script src="js/local.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
-<div id="header">
-<div id="headerbutton"><a href="index.php">Home</a></div>
-<h1>Regional Menu</h1>
+<div data-role="header">
+	<h1>Scouting Form</h1>
 </div>
 <div id="content">
 <form action="process.php" method="post" name="scouting" id="scouting" />
 <h1>Match Info</h1>
-<p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
 <p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
+<p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
 <h1>Auto</h1>
 <p>First 10 seconds of the match</p>
 <table>
