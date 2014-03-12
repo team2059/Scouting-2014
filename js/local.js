@@ -2,17 +2,33 @@ $(document).ready(function(){
 //  $("#submit").click(function() {
 //    a();
 //  });
+  $('#matchNumber').blur(function(){
+    $.ajax({
+      type: "POST",
+      url: 'register.php',
+      data: {
+        round:$('#matchNumber').val(),
+        key:2//TODO: $('#key')
+      },
+      success: function(data){
+        if(data=="die"){
+          alert("Database could not find match, probably because it does not exist");
+        }else{
+          $('#teamNumber').val(data);
+        }
+      }
+    });
+  });
   $("#scouting").submit(function() {
     if(!$("#teamNumber").val()||!$("#matchNumber").val()){
       alert("Enter a Team Number and Match Number");
       $("html, body").animate({ scrollTop: 0 }, "fast");
       return false;
     }
-    var url = "process.php";
     $(this).remove();
     $.ajax({
       type: "POST",
-      url: url,
+      url: "process.php",
       data: $("#scouting").serialize(),
       success: function(data) {
         $('*').html('');

@@ -1,0 +1,29 @@
+<?php
+require('connection.php');
+try{
+  $asdf=$dbh->query("SELECT * FROM `schedule` ORDER BY `round` LIMIT 1000");
+}catch(PDOException $e){
+  die($e);
+}
+if(!empty($_REQUEST['key'])&&!empty($_REQUEST['round'])){
+  $key=$_REQUEST['key'];
+  $ret;
+  while($row=$asdf->fetch(PDO::FETCH_ASSOC)){
+    //die('test');
+    if($row['round']===$_REQUEST['round']){
+      if($key>3){
+        $key-=3;
+        $ret=$row["blu".$key];
+      }else{
+        $arm="red"+$key;
+        $ret=$row["red".$key];
+      }
+      //var_dump($row['red2']);
+    }
+  }
+  if($ret!==0){
+    echo($ret);
+  }else{
+    echo('die');
+  }
+}
