@@ -48,12 +48,22 @@ echo "<center><h1>Match Prediction</h1><table border='1' id='tablesorter-demo' c
 	$blue = "<tr bgcolor='#6666ff'>";
 
 
-	alliance($_POST['red1'],"red");
-	alliance($_POST['red2'],"red");
-	alliance($_POST['red3'],"red");
-	alliance($_POST['blue1'],"blue");
-	alliance($_POST['blue2'],"blue");
-	alliance($_POST['blue3'],"blue");
+  //TODO: Change this back to $_POST in live
+  if(empty($_GET['team'])){
+    alliance($_REQUEST['red1'],"red");
+    alliance($_REQUEST['red2'],"red");
+    alliance($_REQUEST['red3'],"red");
+    alliance($_REQUEST['blue1'],"blue");
+    alliance($_REQUEST['blue2'],"blue");
+    alliance($_REQUEST['blue3'],"blue");
+  }else{
+    alliance($_GET['team'],"red");
+    alliance($_GET['team'],"red");
+    alliance($_GET['team'],"red");
+    alliance($_GET['team'],"blue");
+    alliance($_GET['team'],"blue");
+    alliance($_GET['team'],"blue");
+  }
 	
 	$blueScore = allianceScore($_POST['blue1'])+allianceScore($_POST['blue2'])+allianceScore($_POST['blue3']);
 	$redScore = allianceScore($_POST['red1'])+allianceScore($_POST['red2'])+allianceScore($_POST['red3']);
