@@ -1,0 +1,1162 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>jquery-mobile/css/themes/default/images/ajax-loader.gif at master · jquery/jquery-mobile · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="jquery/jquery-mobile" name="twitter:title" /><meta content="jquery-mobile - jQuery Mobile Framework" name="twitter:description" /><meta content="https://0.gravatar.com/avatar/6906f317a4733f4379b06c32229ef02f?d=https%3A%2F%2Fidenticons.github.com%2Ff426f04f2f9813718fb806b30e0093de.png&amp;r=x&amp;s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://0.gravatar.com/avatar/6906f317a4733f4379b06c32229ef02f?d=https%3A%2F%2Fidenticons.github.com%2Ff426f04f2f9813718fb806b30e0093de.png&amp;r=x&amp;s=400" property="og:image" /><meta content="jquery/jquery-mobile" property="og:title" /><meta content="https://github.com/jquery/jquery-mobile" property="og:url" /><meta content="jquery-mobile - jQuery Mobile Framework" property="og:description" />
+
+    <meta name="hostname" content="github-fe117-cp1-prd.iad.github.net">
+    <meta name="ruby" content="ruby 2.1.0p0-github-tcmalloc (87c9373a41) [x86_64-linux]">
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="AE61FE01:3901:13324F:5320ED3A" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="JN2z1dx27aBUtAtoPUwC2v6qTUGuNhdd8g3ytWbSrXw=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-adcf123587b068f65ee2420a9a7988231694ba13.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-833ee98e576ecb02295720c31a3e06ed45cd542c.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+      <script crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/frameworks-9acb89add4e173259bb0e9e81d36276a93db7af4.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/github-7c07a7496f86ac97a4ee0c270dbe1eed4cabfd71.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="c4751110d85937292fb9f8f61f2819ed">
+
+        <link data-pjax-transient rel='permalink' href='/jquery/jquery-mobile/blob/4434822486adb5e28e44f59e44daa8b42f3501d1/css/themes/default/images/ajax-loader.gif'>
+
+  <meta name="description" content="jquery-mobile - jQuery Mobile Framework" />
+
+  <meta content="70142" name="octolytics-dimension-user_id" /><meta content="jquery" name="octolytics-dimension-user_login" /><meta content="907410" name="octolytics-dimension-repository_id" /><meta content="jquery/jquery-mobile" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="907410" name="octolytics-dimension-repository_network_root_id" /><meta content="jquery/jquery-mobile" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/jquery/jquery-mobile/commits/master.atom" rel="alternate" title="Recent Commits to jquery-mobile:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production windows vis-public page-blob">
+    <a href="#start-of-content" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fjquery%2Fjquery-mobile%2Fblob%2Fmaster%2Fcss%2Fthemes%2Fdefault%2Fimages%2Fajax-loader.gif">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="jquery/jquery-mobile"
+      data-branch="master"
+      data-sha="8d1c9ee88882c01672af1441c20020feb6d96e3b"
+  >
+
+    <input type="hidden" name="nwo" value="jquery/jquery-mobile" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="/login?return_to=%2Fjquery%2Fjquery-mobile"
+    class="minibutton with-count js-toggler-target star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="/jquery/jquery-mobile/stargazers">
+      8,950
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fjquery%2Fjquery-mobile"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/jquery/jquery-mobile/network" class="social-count">
+        2,297
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/jquery" class="url fn" itemprop="url" rel="author"><span itemprop="title">jquery</span></a>
+          </span>
+          <span class="repohead-name-divider">/</span>
+          <strong><a href="/jquery/jquery-mobile" class="js-current-repository js-repo-home-link">jquery-mobile</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/jquery/jquery-mobile" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /jquery/jquery-mobile">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/jquery/jquery-mobile/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /jquery/jquery-mobile/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>389</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/jquery/jquery-mobile/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /jquery/jquery-mobile/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>21</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped tooltipped-w" aria-label="Wiki">
+          <a href="/jquery/jquery-mobile/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_wiki /jquery/jquery-mobile/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/jquery/jquery-mobile/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /jquery/jquery-mobile/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/jquery/jquery-mobile/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /jquery/jquery-mobile/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/jquery/jquery-mobile/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /jquery/jquery-mobile/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/jquery/jquery-mobile.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/jquery/jquery-mobile.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/jquery/jquery-mobile" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/jquery/jquery-mobile" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+  <a href="http://windows.github.com" class="minibutton sidebar-button" title="Save jquery/jquery-mobile to your computer and use it in GitHub Desktop." aria-label="Save jquery/jquery-mobile to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+                <a href="/jquery/jquery-mobile/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download jquery/jquery-mobile as a zip file"
+                   title="Download jquery/jquery-mobile as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+
+<!-- blob contrib key: blob_contributors:v21:6f8e01b7424a11ad20314393ed77ef59 -->
+
+<p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
+
+<a href="/jquery/jquery-mobile/find/master" data-pjax data-hotkey="t" class="js-show-file-finder" style="display:none">Show File Finder</a>
+
+<div class="file-navigation">
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/1.0-stable/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0-stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0-stable">1.0-stable</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/1.1-stable/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1-stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1-stable">1.1-stable</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/1.2-stable/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2-stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2-stable">1.2-stable</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/1.3-stable/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3-stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3-stable">1.3-stable</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/1.4-stable/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4-stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4-stable">1.4-stable</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/4974-move-non-option-constants-to-defaults-object/css/themes/default/images/ajax-loader.gif"
+                 data-name="4974-move-non-option-constants-to-defaults-object"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="4974-move-non-option-constants-to-defaults-object">4974-move-non-option-constants-to-defaults-object</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/6697-detach-transition-events-when-one-fires/css/themes/default/images/ajax-loader.gif"
+                 data-name="6697-detach-transition-events-when-one-fires"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="6697-detach-transition-events-when-one-fires">6697-detach-transition-events-when-one-fires</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/6810-android-4.4-getPath-fixes/css/themes/default/images/ajax-loader.gif"
+                 data-name="6810-android-4.4-getPath-fixes"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="6810-android-4.4-getPath-fixes">6810-android-4.4-getPath-fixes</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/6925-panel-ignores-default-prevented-swipe/css/themes/default/images/ajax-loader.gif"
+                 data-name="6925-panel-ignores-default-prevented-swipe"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="6925-panel-ignores-default-prevented-swipe">6925-panel-ignores-default-prevented-swipe</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/7076-delay-value-change-trigger/css/themes/default/images/ajax-loader.gif"
+                 data-name="7076-delay-value-change-trigger"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="7076-delay-value-change-trigger">7076-delay-value-change-trigger</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/7085-demos-toolbar-fixed-persistent-deprecated-event/css/themes/default/images/ajax-loader.gif"
+                 data-name="7085-demos-toolbar-fixed-persistent-deprecated-event"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="7085-demos-toolbar-fixed-persistent-deprecated-event">7085-demos-toolbar-fixed-persistent-deprecated-event</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/7091-back-button-on-external-toolbar/css/themes/default/images/ajax-loader.gif"
+                 data-name="7091-back-button-on-external-toolbar"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="7091-back-button-on-external-toolbar">7091-back-button-on-external-toolbar</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/7227-listview-perf-improvements/css/themes/default/images/ajax-loader.gif"
+                 data-name="7227-listview-perf-improvements"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="7227-listview-perf-improvements">7227-listview-perf-improvements</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/7234-fix-page-tests/css/themes/default/images/ajax-loader.gif"
+                 data-name="7234-fix-page-tests"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="7234-fix-page-tests">7234-fix-page-tests</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/animation-complete-fixes/css/themes/default/images/ajax-loader.gif"
+                 data-name="animation-complete-fixes"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="animation-complete-fixes">animation-complete-fixes</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/coverTansitions/css/themes/default/images/ajax-loader.gif"
+                 data-name="coverTansitions"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="coverTansitions">coverTansitions</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/dom-creation/css/themes/default/images/ajax-loader.gif"
+                 data-name="dom-creation"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="dom-creation">dom-creation</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/fetchlink/css/themes/default/images/ajax-loader.gif"
+                 data-name="fetchlink"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="fetchlink">fetchlink</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/init-free-example/css/themes/default/images/ajax-loader.gif"
+                 data-name="init-free-example"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="init-free-example">init-free-example</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/issue-5925/css/themes/default/images/ajax-loader.gif"
+                 data-name="issue-5925"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="issue-5925">issue-5925</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/issue-6882/css/themes/default/images/ajax-loader.gif"
+                 data-name="issue-6882"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="issue-6882">issue-6882</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/issue-6885/css/themes/default/images/ajax-loader.gif"
+                 data-name="issue-6885"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="issue-6885">issue-6885</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/issue-6905/css/themes/default/images/ajax-loader.gif"
+                 data-name="issue-6905"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="issue-6905">issue-6905</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/issue-7008/css/themes/default/images/ajax-loader.gif"
+                 data-name="issue-7008"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="issue-7008">issue-7008</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/master/css/themes/default/images/ajax-loader.gif"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/no-prefix-try2/css/themes/default/images/ajax-loader.gif"
+                 data-name="no-prefix-try2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="no-prefix-try2">no-prefix-try2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/perf/css/themes/default/images/ajax-loader.gif"
+                 data-name="perf"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="perf">perf</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/popup-not-relocated/css/themes/default/images/ajax-loader.gif"
+                 data-name="popup-not-relocated"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="popup-not-relocated">popup-not-relocated</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/samepage-transitions/css/themes/default/images/ajax-loader.gif"
+                 data-name="samepage-transitions"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="samepage-transitions">samepage-transitions</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/swipe-cords/css/themes/default/images/ajax-loader.gif"
+                 data-name="swipe-cords"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="swipe-cords">swipe-cords</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/table-refresh-1.3/css/themes/default/images/ajax-loader.gif"
+                 data-name="table-refresh-1.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="table-refresh-1.3">table-refresh-1.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/blob/testswarm/css/themes/default/images/ajax-loader.gif"
+                 data-name="testswarm"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="testswarm">testswarm</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.2">1.4.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.1">1.4.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.0-rc.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.0-rc.1">1.4.0-rc.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.0-beta.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.0-beta.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.0-beta.1">1.4.0-beta.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.0-alpha.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.0-alpha.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.0-alpha.2">1.4.0-alpha.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.0-alpha.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.0-alpha.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.0-alpha.1">1.4.0-alpha.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.4.0/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.4.0">1.4.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.3.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3.2">1.3.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.3.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3.1">1.3.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.3.0-rc.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3.0-rc.1">1.3.0-rc.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.3.0-beta.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3.0-beta.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3.0-beta.1">1.3.0-beta.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.3.0/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.3.0">1.3.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.1">1.2.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0-rc.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0-rc.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0-rc.2">1.2.0-rc.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0-rc.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0-rc.1">1.2.0-rc.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0-pre/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0-pre"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0-pre">1.2.0-pre</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0-beta.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0-beta.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0-beta.1">1.2.0-beta.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0-alpha.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0-alpha.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0-alpha.1">1.2.0-alpha.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.2.0/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.2.0">1.2.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.2">1.1.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.1-rc.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.1-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.1-rc.1">1.1.1-rc.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.1">1.1.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.0-rc.2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.0-rc.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.0-rc.2">1.1.0-rc.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.0-rc.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.0-rc.1">1.1.0-rc.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.1.0/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.1.0">1.1.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0rc3/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0rc3">1.0rc3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0rc2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0rc2">1.0rc2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0rc1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0rc1">1.0rc1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0b3/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0b3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0b3">1.0b3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0b2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0b2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0b2">1.0b2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0b1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0b1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0b1">1.0b1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0a4.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0a4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0a4.1">1.0a4.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0a4/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0a4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0a4">1.0a4</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0a3/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0a3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0a3">1.0a3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0a2/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0a2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0a2">1.0a2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0a1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0a1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0a1">1.0a1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0.1/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0.1">1.0.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mobile/tree/1.0/css/themes/default/images/ajax-loader.gif"
+                 data-name="1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="1.0">1.0</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+  <div class="breadcrumb">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jquery/jquery-mobile" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">jquery-mobile</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jquery/jquery-mobile/tree/master/css" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">css</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jquery/jquery-mobile/tree/master/css/themes" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">themes</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jquery/jquery-mobile/tree/master/css/themes/default" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">default</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jquery/jquery-mobile/tree/master/css/themes/default/images" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">images</span></a></span><span class="separator"> / </span><strong class="final-path">ajax-loader.gif</strong> <span aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="css/themes/default/images/ajax-loader.gif" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+  <div class="commit file-history-tease">
+    <img alt="Pere Orga" class="main-avatar js-avatar" data-user="919779" height="24" src="https://0.gravatar.com/avatar/54786fffbf3dead0eae1be35fa42422c?d=https%3A%2F%2Fidenticons.github.com%2F4034a3e128c0a827ca9fcccb7945da68.png&amp;r=x&amp;s=140" width="24" />
+    <span class="author"><a href="/pereorga" rel="author">pereorga</a></span>
+    <time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2013-09-16T22:22:35+02:00" title="2013-09-16 16:22:35">September 16, 2013</time>
+    <div class="commit-title">
+        <a href="/jquery/jquery-mobile/commit/416c6b055322ad77e3bbc9367877da7c1ad390e6" class="message" data-pjax="true" title="Optimize images using lossless compression">Optimize images using lossless compression</a>
+    </div>
+
+    <div class="participation">
+      <p class="quickstat"><a href="#blob_contributors_box" rel="facebox"><strong>3</strong> contributors</a></p>
+          <a class="avatar tooltipped tooltipped-s" aria-label="toddparker" href="/jquery/jquery-mobile/commits/master/css/themes/default/images/ajax-loader.gif?author=toddparker"><img alt="Todd Parker" class=" js-avatar" data-user="359929" height="20" src="https://0.gravatar.com/avatar/4ec3e17536d217f2367be3aebb72a72b?d=https%3A%2F%2Fidenticons.github.com%2Fa8c8f8e380b51e4f2aa16e1d0ee411d2.png&amp;r=x&amp;s=140" width="20" /></a>
+    <a class="avatar tooltipped tooltipped-s" aria-label="scottjehl" href="/jquery/jquery-mobile/commits/master/css/themes/default/images/ajax-loader.gif?author=scottjehl"><img alt="Scott Jehl" class=" js-avatar" data-user="214783" height="20" src="https://1.gravatar.com/avatar/4137f7daffde77fce06a26a1ac92f9bf?d=https%3A%2F%2Fidenticons.github.com%2F382f151e5c5cfb8d5a821505862702fe.png&amp;r=x&amp;s=140" width="20" /></a>
+    <a class="avatar tooltipped tooltipped-s" aria-label="pereorga" href="/jquery/jquery-mobile/commits/master/css/themes/default/images/ajax-loader.gif?author=pereorga"><img alt="Pere Orga" class=" js-avatar" data-user="919779" height="20" src="https://0.gravatar.com/avatar/54786fffbf3dead0eae1be35fa42422c?d=https%3A%2F%2Fidenticons.github.com%2F4034a3e128c0a827ca9fcccb7945da68.png&amp;r=x&amp;s=140" width="20" /></a>
+
+
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+          <li class="facebox-user-list-item">
+            <img alt="Todd Parker" class=" js-avatar" data-user="359929" height="24" src="https://0.gravatar.com/avatar/4ec3e17536d217f2367be3aebb72a72b?d=https%3A%2F%2Fidenticons.github.com%2Fa8c8f8e380b51e4f2aa16e1d0ee411d2.png&amp;r=x&amp;s=140" width="24" />
+            <a href="/toddparker">toddparker</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="Scott Jehl" class=" js-avatar" data-user="214783" height="24" src="https://1.gravatar.com/avatar/4137f7daffde77fce06a26a1ac92f9bf?d=https%3A%2F%2Fidenticons.github.com%2F382f151e5c5cfb8d5a821505862702fe.png&amp;r=x&amp;s=140" width="24" />
+            <a href="/scottjehl">scottjehl</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="Pere Orga" class=" js-avatar" data-user="919779" height="24" src="https://0.gravatar.com/avatar/54786fffbf3dead0eae1be35fa42422c?d=https%3A%2F%2Fidenticons.github.com%2F4034a3e128c0a827ca9fcccb7945da68.png&amp;r=x&amp;s=140" width="24" />
+            <a href="/pereorga">pereorga</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file-box">
+  <div class="file">
+    <div class="meta clearfix">
+      <div class="info file-name">
+        <span class="icon"><b class="octicon octicon-file-text"></b></span>
+        <span class="mode" title="File Mode">file</span>
+        <span class="meta-divider"></span>
+        <span>6.242 kb</span>
+      </div>
+      <div class="actions">
+        <div class="button-group">
+            <a class="minibutton tooltipped tooltipped-w"
+               href="http://windows.github.com" aria-label="Open this file in GitHub for Windows">
+                <span class="octicon octicon-device-desktop"></span> Open
+            </a>
+          <a href="/jquery/jquery-mobile/raw/master/css/themes/default/images/ajax-loader.gif" class="button minibutton " id="raw-url">Raw</a>
+          <a href="/jquery/jquery-mobile/commits/master/css/themes/default/images/ajax-loader.gif" class="button minibutton " rel="nofollow">History</a>
+        </div><!-- /.button-group -->
+          <a class="minibutton danger disabled empty-icon tooltipped tooltipped-w" href="#"
+             aria-label="You must be signed in to make or propose changes">
+          Delete
+        </a>
+      </div><!-- /.actions -->
+    </div>
+        <div class="blob-wrapper data type-text js-blob-data">
+      <div class="image js-image">
+          <span class="border-wrap"><img src="/jquery/jquery-mobile/blob/master/css/themes/default/images/ajax-loader.gif?raw=true" /></span>
+      </div>
+  </div>
+
+  </div>
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="button">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.03025s from github-fe117-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+
