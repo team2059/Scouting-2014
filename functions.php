@@ -1,15 +1,13 @@
 <?php
-function alliance($team, $color){	 
-	$i=1;
-
+function robotData($team, $color){	 
 	include('connection.php');
-	$avg=$dbh->query("SELECT AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa, AVG(`pointsPrevented`) AS pointsPreventeda FROM `rounds` WHERE `teamNumber`=".$team."");
+	$avg=$dbh->query("SELECT count(`teamNumber`=2059) AS data, AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa, AVG(`pointsPrevented`) AS pointsPreventeda FROM `rounds` WHERE `teamNumber`=".$team."");
 	while($row = $avg->fetch(PDO::FETCH_ASSOC)){
 		if($color=="red")echo("<tr bgcolor='#ff6666'>");
 		else echo("<tr bgcolor='#6666ff'>");
 
 		echo"<td>" . $team . "</td>";
-		echo"<td>" . $i . "</td>";
+		echo"<td>" . round($row['data'],2) . "</td>";
 		echo"<td>" . round($row['autohtMissa'],2) . "</td>";
 		echo"<td>" . round($row['autohtMadea'],2) . "</td>";
 		echo"<td>" . round($row['hotGoala'],2) . "</td>";
@@ -38,14 +36,11 @@ function alliance($team, $color){
 		echo"<td>" . round($tAccuracy,2) . "</td>";
 		echo"</tr>";
 	}
-	return round($totalScore,2);
 }
 
-function allianceScore($team){	 
-	$i=1;
-
+function robotOffense($team){	 
 	include('connection.php');
-	$avg=$dbh->query("SELECT AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa, AVG(`pointsPrevented`) AS pointsPreventeda FROM `rounds` WHERE `teamNumber`=".$team."");
+	$avg=$dbh->query("SELECT AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa FROM `rounds` WHERE `teamNumber`=".$team."");
 	while($row = $avg->fetch(PDO::FETCH_ASSOC)){
 		$tScore=($row['htMadea']*10)+($row['ltMadea']*1)+($row['passesa']*10)+($row['trussa']*10)+($row['catchesa']*10);
 		$aScore=($row['autohtMadea']*15)+($row['autoltMadea']*6)+($row['hotGoala']*5)+($row['hotZonea']*5);
@@ -53,4 +48,11 @@ function allianceScore($team){
 	}
 	return round($totalScore,2);
 }
-
+function robotDefense($team){	 
+	include('connection.php');
+	$avg=$dbh->query("SELECT AVG(`pointsPrevented`) AS pointsPreventeda FROM `rounds` WHERE `teamNumber`=".$team."");
+	while($row = $avg->fetch(PDO::FETCH_ASSOC)){
+		$defense=$row['pointsPreventeda'];
+	}
+	return round($defense,2);
+}

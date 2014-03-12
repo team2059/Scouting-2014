@@ -44,31 +44,31 @@ echo "<center><h1>Match Prediction</h1><table border='1' id='tablesorter-demo' c
      
      </tr></thead><tbody>";
 
-	$red = "<tr bgcolor='#ff6666'>";
-	$blue = "<tr bgcolor='#6666ff'>";
-
-
   //TODO: Change this back to $_POST in live
   if(empty($_GET['team'])){
-    alliance($_REQUEST['red1'],"red");
-    alliance($_REQUEST['red2'],"red");
-    alliance($_REQUEST['red3'],"red");
-    alliance($_REQUEST['blue1'],"blue");
-    alliance($_REQUEST['blue2'],"blue");
-    alliance($_REQUEST['blue3'],"blue");
+    robotData($_REQUEST['red1'],"red");
+    robotData($_REQUEST['red2'],"red");
+    robotData($_REQUEST['red3'],"red");
+    robotData($_REQUEST['blue1'],"blue");
+    robotData($_REQUEST['blue2'],"blue");
+    robotData($_REQUEST['blue3'],"blue");
   }else{
-    alliance($_GET['team'],"red");
-    alliance($_GET['team'],"red");
-    alliance($_GET['team'],"red");
-    alliance($_GET['team'],"blue");
-    alliance($_GET['team'],"blue");
-    alliance($_GET['team'],"blue");
+    robotData($_GET['team'],"red");
+    robotData($_GET['team'],"red");
+    robotData($_GET['team'],"red");
+    robotData($_GET['team'],"blue");
+    robotData($_GET['team'],"blue");
+    robotData($_GET['team'],"blue");
   }
 	
-	$blueScore = allianceScore($_POST['blue1'])+allianceScore($_POST['blue2'])+allianceScore($_POST['blue3']);
-	$redScore = allianceScore($_POST['red1'])+allianceScore($_POST['red2'])+allianceScore($_POST['red3']);
+	$blueScore = (robotOffense($_POST['blue1'])+robotOffense($_POST['blue2'])+robotOffense($_POST['blue3']))-(robotDefense($_POST['red1'])+robotDefense($_POST['red2'])+robotDefense($_POST['red3']));
+	$redScore = (robotOffense($_POST['red1'])+robotOffense($_POST['red2'])+robotOffense($_POST['red3']))-(robotDefense($_POST['blue1'])+robotDefense($_POST['blue2'])+robotDefense($_POST['blue3']));
+	$margin = abs($blueScore-$redScore);
 	
-	echo("<h1>Blue: $blueScore Red: $redScore</h1>");
+	if($blueScore>$redScore)echo"<h1 style='color:#1111ff'>";
+	else if($blueScore<$redScore)echo"<h1 style='color:#ff1111'>";
+	else echo"<h1>";
+	echo("Blue: $blueScore Red: $redScore Margin: $margin</h1>");
 
 
      echo"</tbody></table></center></body></html>";
