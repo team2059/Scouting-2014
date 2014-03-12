@@ -19,6 +19,25 @@ require('connection.php');
 </div>
 <div id="content">
 <form action="process.php" method="post" name="scouting" id="scouting" />
+
+<div id="scouterID" data-role="fieldcontain">
+<fieldset data-role="controlgroup" data-type="horizontal" >
+	<legend>Scouter ID:</legend>
+	<input id="radio1" name="scouterID" value="red1" type="radio">
+	<label for="radio1">Red 1</label> 
+	<input id="radio2" name="scouterID" value="red2" type="radio">
+	<label for="radio2">Red 2</label>
+	<input id="radio3" name="scouterID" value="red3" type="radio">
+	<label for="radio3">Red 3</label>
+    <input id="radio4" name="scouterID" value="blu1" type="radio">
+	<label for="radio4">Blue 1</label> 
+    <input id="radio5" name="scouterID" value="blu2" type="radio">
+	<label for="radio5">Blue 2</label> 
+    <input id="radio6" name="scouterID" value="blu3" type="radio">
+	<label for="radio6">Blue 3</label> 
+</fieldset>
+</div>
+
 <h1>Match Info</h1>
 <p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
 <p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
