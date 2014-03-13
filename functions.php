@@ -56,3 +56,9 @@ function robotDefense($team){
 	}
 	return round($defense,2);
 }
+function score($red1,$red2,$red3,$blue1,$blue2,$blue3) {
+	$blueScore = (robotOffense($blue1)+robotOffense($blue2)+robotOffense($blue3))-(robotDefense($red1)+robotDefense($red2)+robotDefense($red3));
+	$redScore = (robotOffense($red1)+robotOffense($red2)+robotOffense($red3))-(robotDefense($blue1)+robotDefense($blue2)+robotDefense($blue3));
+	$margin = abs($blueScore-$redScore);
+	return array($redScore,$blueScore,$margin);
+}

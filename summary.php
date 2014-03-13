@@ -16,7 +16,7 @@ require('connection.php');
     </head>
     <body>
 <?php
-
+	include('menu.php');
      echo "<center><h1>Scouting Average NC Results</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
      <thead><tr>
      <th><b>Team Number</b></th>

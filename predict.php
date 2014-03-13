@@ -5,6 +5,7 @@ require('connection.php');
 <!DOCTYPE>
 <html>
 <body>
+<?php include('menu.php'); ?>
 <form action="predictprocess.php" method="post" name="scouting" />
 <p>Red 1: <input type="number" name="red1" id="red1" /></p>
 <p>Red 2: <input type="number" name="red2" id="red2" /></p>

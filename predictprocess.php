@@ -6,19 +6,17 @@ include('functions.php');
     <head>
 	<script type="text/javascript" src="js/jquery-latest.js"></script>
 	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-
-
 	<script type="text/javascript">
 	$(function() {		
-		$("#tablesorter-demo").tablesorter(); 
+		$("#table").tablesorter(); 
 	});	
 	</script>
     </head>
     <body>
 <?php
 
-
-echo "<center><h1>Match Prediction</h1><table border='1' id='tablesorter-demo' class='tablesorter'>
+include('menu.php');
+echo "<center><h1>Match Prediction</h1><table border='1' id='table' class='tablesorter'>
      <thead><tr>
      <th><b>Team Number</b></th>
      <th><b>Data Number</b></th>
@@ -60,16 +58,12 @@ echo "<center><h1>Match Prediction</h1><table border='1' id='tablesorter-demo' c
     robotData($_GET['team'],"blue");
     robotData($_GET['team'],"blue");
   }
-	
-	$blueScore = (robotOffense($_POST['blue1'])+robotOffense($_POST['blue2'])+robotOffense($_POST['blue3']))-(robotDefense($_POST['red1'])+robotDefense($_POST['red2'])+robotDefense($_POST['red3']));
-	$redScore = (robotOffense($_POST['red1'])+robotOffense($_POST['red2'])+robotOffense($_POST['red3']))-(robotDefense($_POST['blue1'])+robotDefense($_POST['blue2'])+robotDefense($_POST['blue3']));
-	$margin = abs($blueScore-$redScore);
+	list($redScore, $blueScore, $margin) = score($_POST['red1'],$_POST['red2'],$_POST['red3'],$_POST['blue1'],$_POST['blue2'],$_POST['blue3']);
 	
 	if($blueScore>$redScore)echo"<h1 style='color:#1111ff'>";
 	else if($blueScore<$redScore)echo"<h1 style='color:#ff1111'>";
 	else echo"<h1>";
 	echo("Blue: $blueScore Red: $redScore Margin: $margin</h1>");
 
-
-     echo"</tbody></table></center></body></html>";
-	 echo"<a href='predict.php'>New Match</a>";
+	echo"</tbody></table></center></body></html>";
+	echo"<a href='predict.php'>New Match</a>";

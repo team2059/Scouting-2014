@@ -40,6 +40,19 @@ require('connection.php');
 <h1>Match Info</h1>
 <p>Match Number: <input type="number" name="matchNumber" id="matchNumber" value="<?php if(!empty($_GET['match'])&&$_GET['match']>0){echo($_GET['match']);} ?>" /></p>
 <p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
+<div id="startPosition" data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>Start Position:</legend>
+                <input id="radio1" name="startPosition" value="left" type="radio">
+                <label for="radio1">Left</label>
+                <input id="radio2" name="startPosition" value="middle" type="radio">
+                <label for="radio2">Middle</label>
+                <input id="radio3" name="startPosition" value="right" type="radio">
+                <label for="radio3">Right</label>
+                <input id="radio4" name="startPosition" value="goalie" type="radio">
+                <label for="radio4">Goalie</label>
+            </fieldset>
+</div>
 <h1>Auto</h1>
 <p>First 10 seconds of the match</p>
 <table>
@@ -66,29 +79,7 @@ require('connection.php');
   <option value="no">No</option>
   <option value="yes">Yes</option>
 </select> 
-<div id="startPosition" data-role="fieldcontain">
-            <fieldset data-role="controlgroup" data-type="vertical">
-                <legend>
-                    Start Position:
-                </legend>
-                <input id="radio1" name="startPosition" value="left" type="radio">
-                <label for="radio1">
-                    Left
-                </label>
-                <input id="radio2" name="startPosition" value="middle" type="radio">
-                <label for="radio2">
-                    Middle
-                </label>
-                <input id="radio3" name="startPosition" value="right" type="radio">
-                <label for="radio3">
-                    Right
-                </label>
-                <input id="radio4" name="startPosition" value="goalie" type="radio">
-                <label for="radio4">
-                    Goalie
-                </label>
-            </fieldset>
-</div>
+
 <h1>Teleop</h1>
 <p>Driver control period</p>
 <table>
