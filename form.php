@@ -23,23 +23,22 @@ require('connection.php');
 <div id="scouterID" data-role="fieldcontain">
 <fieldset data-role="controlgroup" data-type="horizontal" >
 	<legend>Scouter ID:</legend>
-	<input id="radio1" name="scouterID" value="red1" type="radio">
+  <input id="radio1" name="scouterID" value="1" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==1){echo('checked="checked"');}?>>
 	<label for="radio1">Red 1</label> 
-	<input id="radio2" name="scouterID" value="red2" type="radio">
+	<input id="radio2" name="scouterID" value="2" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==2){echo('checked="checked"');}?>>
 	<label for="radio2">Red 2</label>
-	<input id="radio3" name="scouterID" value="red3" type="radio">
+	<input id="radio3" name="scouterID" value="3" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==3){echo('checked="checked"');}?>>
 	<label for="radio3">Red 3</label>
-    <input id="radio4" name="scouterID" value="blu1" type="radio">
+    <input id="radio4" name="scouterID" value="4" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==4){echo('checked="checked"');}?>>
 	<label for="radio4">Blue 1</label> 
-    <input id="radio5" name="scouterID" value="blu2" type="radio">
+    <input id="radio5" name="scouterID" value="5" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==5){echo('checked="checked"');}?>>
 	<label for="radio5">Blue 2</label> 
-    <input id="radio6" name="scouterID" value="blu3" type="radio">
+    <input id="radio6" name="scouterID" value="6" type="radio" <?php if(!empty($_GET['key'])&&$_GET['key']==6){echo('checked="checked"');}?>>
 	<label for="radio6">Blue 3</label> 
 </fieldset>
 </div>
-
 <h1>Match Info</h1>
-<p>Match Number: <input type="number" name="matchNumber" id="matchNumber" /></p>
+<p>Match Number: <input type="number" name="matchNumber" id="matchNumber" value="<?php if(!empty($_GET['match'])&&$_GET['match']>0){echo($_GET['match']);} ?>" /></p>
 <p>Team Number: <input type="number" name="teamNumber" id="teamNumber" /></p>
 <h1>Auto</h1>
 <p>First 10 seconds of the match</p>

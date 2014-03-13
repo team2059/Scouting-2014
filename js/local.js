@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('#matchNumber').focus();
 //  $("#submit").click(function() {
 //    a();
 //  });
@@ -8,7 +9,7 @@ $(document).ready(function(){
       url: 'register.php',
       data: {
         round:$('#matchNumber').val(),
-        key:2//TODO: $('#key')
+        key:$("input:radio[name=scouterID]:checked").val()
       },
       success: function(data){
         if(data=="die"){
@@ -24,18 +25,10 @@ $(document).ready(function(){
       alert("Enter a Team Number and Match Number");
       $("html, body").animate({ scrollTop: 0 }, "fast");
       return false;
+    }else{
+      a();
+      return false;
     }
-    $(this).remove();
-    $.ajax({
-      type: "POST",
-      url: "process.php",
-      data: $("#scouting").serialize(),
-      success: function(data) {
-        $('*').html('');
-        window.location.reload();
-      }
-    });
-    return false;
   });
   $(".increase").click(function(){
     $(this).parent().parent().prev().children().children().first().val(parseInt($(this).parent().parent().prev().children().children().first().val())+1);
@@ -46,3 +39,16 @@ $(document).ready(function(){
     }
   });
 });
+function a(){
+  $(this).remove();
+  $.ajax({
+    type: "POST",
+    url: "process.php",
+    data: $("#scouting").serialize(),
+    success: function(data) {
+      window.location.href = window.location.href.split("?")[0].split("#")[0] + "?key="+$("input:radio[name=scouterID]:checked").val()+"&match="+(parseInt($('#matchNumber').val())+1);
+      $('*').html('');
+      //window.location.reload();
+    }
+  });
+}
