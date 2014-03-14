@@ -38,27 +38,26 @@ function robotData($team, $color){
 	}
 }
 
-function robotOffense($team){	 
+function robotScore($team){	 
 	include('connection.php');
-	$avg=$dbh->query("SELECT AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa FROM `rounds` WHERE `teamNumber`=".$team."");
+	$avg=$dbh->query("SELECT AVG(`autohtMiss`) AS autohtMissa, AVG(`autohtMade`) AS autohtMadea, AVG(`hotGoal`) AS hotGoala, AVG(`autoltMiss`) AS autoltMissa, AVG(`autoltMade`) AS autoltMadea, AVG(`hotZone`='yes') AS hotZonea, AVG(`htMiss`) AS htMissa, AVG(`htMade`) AS htMadea, AVG(`ltMiss`) AS ltMissa, AVG(`ltMade`) AS ltMadea, AVG(`passes`) AS passesa, AVG(`catches`) AS catchesa, AVG(`truss`) AS trussa,AVG(`pointsPrevented`) AS pointsPreventeda  FROM `rounds` WHERE `teamNumber`=".$team."");
 	while($row = $avg->fetch(PDO::FETCH_ASSOC)){
 		$tScore=($row['htMadea']*10)+($row['ltMadea']*1)+($row['passesa']*10)+($row['trussa']*10)+($row['catchesa']*10);
 		$aScore=($row['autohtMadea']*15)+($row['autoltMadea']*6)+($row['hotGoala']*5)+($row['hotZonea']*5);
 		$totalScore=$tScore+$aScore;
-	}
-	return round($totalScore,2);
-}
-function robotDefense($team){	 
-	include('connection.php');
-	$avg=$dbh->query("SELECT AVG(`pointsPrevented`) AS pointsPreventeda FROM `rounds` WHERE `teamNumber`=".$team."");
-	while($row = $avg->fetch(PDO::FETCH_ASSOC)){
 		$defense=$row['pointsPreventeda'];
 	}
-	return round($defense,2);
+	return array(round($totalScore,2),round($defense,2));
 }
 function score($red1,$red2,$red3,$blue1,$blue2,$blue3) {
-	$blueScore = (robotOffense($blue1)+robotOffense($blue2)+robotOffense($blue3))-(robotDefense($red1)+robotDefense($red2)+robotDefense($red3));
-	$redScore = (robotOffense($red1)+robotOffense($red2)+robotOffense($red3))-(robotDefense($blue1)+robotDefense($blue2)+robotDefense($blue3));
+	list($red1o,$red1d) = robotScore($red1);
+	list($red2o,$red2d) = robotScore($red2);
+	list($red3o,$red3d) = robotScore($red3);
+	list($blue1o,$blue1d) = robotScore($blue1);
+	list($blue2o,$blue2d) = robotScore($blue2);
+	list($blue3o,$blue3d) = robotScore($blue3);
+	$blueScore = ($blue1o+$blue2o+$blue3o)-($red1d+$red2d+$red3d);
+	$redScore = ($red1o+$red2o+$red3o)-($blue1d+$blue2d+$blue3d);
 	$margin = abs($blueScore-$redScore);
 	return array($redScore,$blueScore,$margin);
 }

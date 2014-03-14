@@ -10,5 +10,6 @@
 <div id="menu">
 <a href="display.php">Raw Data</a>
 <a href="summary.php">Team Averages</a>
-<a href="predict.php">Predict a Match</a>
+<a href="schedule.php">Schedule & Prediction</a>
+<a href="predict.php">Predict Match</a>
 </div>
