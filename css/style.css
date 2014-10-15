@@ -19,6 +19,7 @@ body {
 }
 .card h1 {
 	margin-top:0;
+	font-weight:100;
 }
 .radio label {
 	text-align:center;
@@ -49,9 +50,36 @@ input[type="number"] {
 	width:100%;
 	font-size:2em;
 }
-input[type="text"] {
+textarea {
 	width:100%;
 	height:4em;
+	font-size:1.5em;
+}
+p {
+	margin:0 0 0 0;
+	padding:0em 0 .5em 0;
+}
+.panal {
+	width:100%;
+}
+.panel input[type=text] {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	text-align:center;
+	font-size:2em;
+	width:70%;
+}
+.panel input[type=button] {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	font-size:2em;
+	width:15%;
+}
+.panel input[type=button]:first-of-type {
+	float:left;
+}
+.panel input[type=button]:last-of-type {
+	float:right;
 }
 input[type=submit] {
 	width:100%;

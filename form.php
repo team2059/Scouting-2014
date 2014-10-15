@@ -62,26 +62,34 @@ require('connection.php');
 </div>
 <div class="card">
     <h1>Auto</h1>
-    <p>First 10 seconds of the match</p>
-    <table>
-    <tr>
-    <td><label for="autohtMiss">High Target Missed: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autohtMiss" value="0" id="autohtMiss"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="autohtMade">High Target Made: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autohtMade" value="0" id="autohtMade"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="hotGoal">Hot Goal: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="hotGoal" value="0" id="hotGoal"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="autoltMiss">Low Target Missed: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autoltMiss" value="0" id="autoltMiss"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="autoltMade">Low Target Made: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="autoltMade" value="0" id="autoltMade"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    </tr>
-    </table>
+	
+    <label for="autohtMiss">High Target Missed: </label>
+    <div class="panel">
+        <input type="button" class="decrease" value="-" /><input type="text" name="autohtMiss" value="0" id="autohtMiss"/>
+        <input type="button" class="increase" value="+" />
+    </div>
+    
+    <label for="autohtMade">High Target Made: </label>
+    <div class="panel">
+    <input type="button" class="decrease" value="-" /><input type="text" name="autohtMade" value="0" id="autohtMade"/>
+    <input type="button" class="increase" value="+" />
+    </div>
+    
+    <label for="hotGoal">Hot Goal: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="hotGoal" value="0" id="hotGoal"/>
+    <input type="button" class="increase" value="+" />
+    </div>
+    
+    <label for="autoltMiss">Low Target Missed: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="autoltMiss" value="0" id="autoltMiss"/>
+    <input type="button" class="increase" value="+" />
+    </div>
+    
+    <label for="autoltMade">Low Target Made: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="autoltMade" value="0" id="autoltMade"/>
+    <input type="button" class="increase" value="+" />
+	</div>
+
     <label for="hotZone">Hot Zone:</label>
     <select name="hotZone" id="hotZone" data-role="slider">
       <option value="no">No</option>
@@ -91,39 +99,34 @@ require('connection.php');
 
 <div class="card">
     <h1>Teleop</h1>
-    <p>Driver control period</p>
-    <table>
-    <tr>
-    <td><label for="htMiss">High Target Missed: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="htMiss" value="0" id="htMiss"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="htMade">High Target Made: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="htMade" value="0" id="htMade"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="ltMiss">Low Target Missed: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="ltMiss" value="0" id="ltMiss"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="ltMade">Low Target Made: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="ltMade" value="0" id="ltMade"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="passes">Passes: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="passes" value="0" id="passes"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="catches">Catches: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="catches" value="0" id="catches"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="truss">Shots over truss: </label></td>
-    <td><input type="button" class="decrease" value="-" /></td><td><input type="text" name="truss" value="0" id="truss"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    <tr><td><label for="pointsPrevented">Estimate Points Prevented: </label></td>
-    <td><input type="button" class="decrease" value="-" "pointsPreventedm()"/></td><td><input type="text" name="pointsPrevented" value="0" id="pointsPrevented"/></td>
-    <td><input type="button" class="increase" value="+" /></td></tr>
-    </tr>
-    </table>
+    <label for="htMiss">High Target Missed: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="htMiss" value="0" id="htMiss"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="htMade">High Target Made: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="htMade" value="0" id="htMade"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="ltMiss">Low Target Missed: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="ltMiss" value="0" id="ltMiss"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="ltMade">Low Target Made: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="ltMade" value="0" id="ltMade"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="passes">Passes: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="passes" value="0" id="passes"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="catches">Catches: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="catches" value="0" id="catches"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="truss">Shots over truss: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" /><input type="text" name="truss" value="0" id="truss"/>
+    <input type="button" class="increase" value="+" /></div>
+    <label for="pointsPrevented">Estimate Points Prevented: </label>
+    <div class="panel"><input type="button" class="decrease" value="-" "pointsPreventedm()"/><input type="text" name="pointsPrevented" value="0" id="pointsPrevented"/>
+    <input type="button" class="increase" value="+" /></div>
 </div>
 
 <div class="card">
-	<p>Comments: <input type="text-box" name="note" /></p>
+	<h1>Comments</h1> <textarea cols="40" rows="5" name="note" ></textarea>
 </div>
 <input id="submit" type="submit" value="Submit" />
 <!--
