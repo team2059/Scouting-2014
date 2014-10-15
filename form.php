@@ -4,18 +4,13 @@ require('connection.php');
 ?>
 <!DOCTYPE>
 <head>
-<title>Scouting - Regional Form</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-
-<script src="js/jquery.js"></script>
-<script src="js/local.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scouting - Regional Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/local.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body> 
-<div data-role="header">
-	<h1>Scouting Form</h1>
-</div>
 <div id="content">
 <form action="process.php" method="post" name="scouting" id="scouting" />
 
@@ -129,9 +124,6 @@ require('connection.php');
 	<h1>Comments</h1> <textarea cols="40" rows="5" name="note" ></textarea>
 </div>
 <input id="submit" type="submit" value="Submit" />
-<!--
-  <input id="submit" onClick="a();" type="button" value="Submit" />
--->
 </form>
   </div>
 </body>
