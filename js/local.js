@@ -31,11 +31,11 @@ $(document).ready(function(){
     }
   });
   $(".increase").click(function(){
-    $(this).parent().parent().prev().children().children().first().val(parseInt($(this).parent().parent().prev().children().children().first().val())+1);
+    $(this).prev().first().val(parseInt($(this).prev().first().val())+1);
   });
   $(".decrease").click(function(){
-    if(parseInt($(this).parent().parent().next().children().children().first().val())>0){
-      $(this).parent().parent().next().children().children().first().val(parseInt($(this).parent().parent().next().children().children().first().val())-1);
+    if(parseInt($(this).next().first().val())>0){
+      $(this).next().first().val(parseInt($(this).next().first().val())-1);
     }
   });
 });
