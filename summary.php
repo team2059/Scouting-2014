@@ -4,7 +4,7 @@ require('connection.php');
 ?>
 	<html>
     <head>
-	<script type="text/javascript" src="js/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
 	<script type="text/javascript">
 	$(function() {		

@@ -23,8 +23,7 @@ body {
 }
 .radio label {
 	text-align:center;
-	border-radius: 3px;
-	border: 1px solid #D1D3D4
+	border: .1em solid #D1D3D4
 }
 .radio {
 	width:100%;
@@ -72,22 +71,32 @@ p {
 .panel input[type=button] {
 	margin:0 0 0 0;
 	padding:0 0 0 0;
-	font-size:2em;
+	color:#FFF;
+	font-size:2.2em;
 	width:15%;
+	border:none;
 }
 .panel input[type=button]:first-of-type {
+	background-color:#5677fc;
 	float:left;
 }
 .panel input[type=button]:last-of-type {
+	background-color:#ff9800;
 	float:right;
 }
 input[type=submit] {
 	width:100%;
 	margin-bottom:1.5em;
-	padding:1em 1em 1em 1em;
+	padding:.5em 1em .5em 1em;
 	background-color:#ff9800;
+	font-size:2em;
+	color:#FFF;
 	border:none;
 	box-shadow: 0 .2em .5em #888888;
+}
+select {
+	width:100%;
+	font-size:2em;
 }
 
 	
